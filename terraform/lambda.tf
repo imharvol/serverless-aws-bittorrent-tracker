@@ -42,7 +42,7 @@ resource "aws_lambda_function" "tracker" {
 }
 
 # Add a function url
-resource "aws_lambda_function_url" "test_latest" {
+resource "aws_lambda_function_url" "tracker" {
   function_name      = aws_lambda_function.tracker.function_name
   authorization_type = "NONE"
 }

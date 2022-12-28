@@ -9,11 +9,16 @@ resource "aws_dynamodb_table" "tracker_swarms" {
     type = "S"
   }
 
-  # range_key = "Timestamp"
-  # attribute {
-  #   name = "Timestamp"
-  #   type = "N"
-  # }
+  range_key = "IP"
+  attribute {
+    name = "IP"
+    type = "S"
+  }
+
+  ttl {
+    enabled        = true
+    attribute_name = "TTL"
+  }
 }
 
 # Allow the lambda function to access the DDB table
