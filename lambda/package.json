@@ -11,7 +11,7 @@
   "main": "index.js",
   "scripts": {
     "create-node-modules": "ln -s /opt/nodejs/node_modules node_modules",
-    "create-zip": "zip --symlinks -r function.zip index.js package.json node_modules",
+    "create-zip": "zip --symlinks -r function.zip index.js common.js package.json node_modules",
     "create-layer": "npx create-lambda-layer-aws@^1.1.0 ./package.json"
   },
   "type": "module",

@@ -21,3 +21,7 @@ cd ./terraform
 terraform init
 terraform apply
 ```
+
+---
+
+Inspired by https://github.com/webtorrent/bittorrent-tracker
